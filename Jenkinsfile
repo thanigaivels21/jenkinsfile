@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('SCM checkout'){
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/thanigaivels21/java-maven-app.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/thanigaivels21/java-maven-war-app.git']])
             }
         }
         stage('Maven Build'){
